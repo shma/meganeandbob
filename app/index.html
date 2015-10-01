@@ -12,6 +12,7 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -26,32 +27,37 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <div id="fullpage">
         <div class="section mb-section-logo" align="center">
           <img src="images/meganeandbob.jpg" width=50%>
         </div>
         <div id="about" class="section" align="center">
           <h1>ABOUT</h1>
+          <img src="images/mb.png" class="img-responsive">
           <p class="mb-p">
             クールでシャープなプログラマー男子”メガネ”と、<br>
             キュートでポップなデザイナー女子”ボブ”のIAMAS学生2人からなる、<br>
             男女混成VJユニット。異質な2人が起こす化学反応で、<br>
-            クールでキュートな映像世界を繰り広げる。
+            クールでキュートな映像世界を繰り広げる。<br><br>
+            メガネ: <a href="http://shma.jp">Shunya Matsuno</a>
+            ボブ: <a href="http://tttomoe.tumblr.com">Tomoe Okazaki</a>
           </p>  
         </div>
         <div id="works" class="section" align="center">
           <h1>WORKS</h1>
           <div class="row">
-            <div class="col-md-4"><a href="http://toggle.nagoya"><img src="images/okumino_logo.png" class="img-responsive"></a></div>
-            <div class="col-md-4"><a href="http://toggle.nagoya"><img src="images/toggle_logo.png" class="img-responsive"></a></div>
-            <div class="col-md-4"><a href="http://postfes.jp"><img src="images/post_logo.png" class="img-responsive"></a></div>
+            <div class="col-md-4"><a target="_blank" href="https://www.youtube.com/watch?v=AfiyeVnhPhI"><img src="images/okumino_logo.png" class="img-responsive"></a></div>
+            <div class="col-md-4"><a target="_blank" href="http://toggle.nagoya"><img src="images/toggle_logo.png" class="img-responsive"></a></div>
+            <div class="col-md-4"><a target="_blank" href="http://postfes.jp"><img src="images/post_logo.png" class="img-responsive"></a></div>
           </div>
         </div>
     </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -70,20 +76,10 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-    
-
     <!-- build:js scripts/main.js -->
     <script src="scripts/two.min.js"></script>
     <script src="scripts/main.js"></script>
     <script>
-      var two = new Two({
-        fullscreen: true,
-        autostart: true
-      }).appendTo(document.body);
-      var rect = two.makeRectangle(two.width / 2, two.height / 2, 50 ,50);
-      two.bind('update', function() {
-        rect.rotation += 0.001;
-      });
     </script>
     <!-- endbuild -->
 
