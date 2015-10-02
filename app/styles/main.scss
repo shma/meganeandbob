@@ -108,3 +108,10 @@ h1 {
 .mb-about {
     margin-bottom: 30px;
 }
+
+.twitter-share-button {
+    position: fixed !important;
+    z-index: 99;
+    right: 15px; 
+    top: 9px;
+}
