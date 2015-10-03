@@ -29,13 +29,13 @@ $(document).ready(function() {
               $('.mb-works').addClass('animated bounceInDown'); 
 
               $('.mb-col-1').show();
-              $('.mb-col-1').addClass('animated flipInX');
+              //$('.mb-col-1').addClass('animated flipInX');
 
               $('.mb-col-2').show();
-               $('.mb-col-2').addClass('animated flipInX'); 
+              // $('.mb-col-2').addClass('animated flipInX'); 
                
               $('.mb-col-3').show();
-               $('.mb-col-3').addClass('animated flipInX'); 
+              //$('.mb-col-3').addClass('animated flipInX'); 
             }
         }
     });
