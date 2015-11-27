@@ -126,13 +126,22 @@ h1 {
 }
 
 .mb-main {
-    margin-top: 75px;
+    margin-top: 55px;
 }
 
 .mb-menu {
     font-size:12px;
     margin-left:45px;
     padding-top:160px;
+}
+
+@media screen and (max-width: 768px) {
+    .mb-menu {
+        font-size:12px;
+        margin-left:20px;
+        padding-top:20px;
+    }
+
 }
 
 .mb-link {
@@ -145,3 +154,6 @@ h1 {
     margin-bottom:30px;
 }
 
+.mb-col {
+    margin-top:20px;
+}
