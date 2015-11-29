@@ -43,6 +43,11 @@ $(document).ready(function() {
         $(".mb-works").hide();
         $(".mb-kasaneru").hide();
     });
-
+    $(".mb-kasaneru").on('click',function() {
+        $(".mb-contact").hide();
+        $(".mb-about").hide();
+        $(".mb-works").hide();
+        $(".mb-kasaneru").show();
+    });
 });
 
